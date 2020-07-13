@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:defaultQueryHint="Search..."
+        android:background="@drawable/out_lined_square"
+        />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter title"
+        android:layout_below="@id/searchView"
+        />
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_below="@id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter title"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_below="@id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:layout_below="@id/btnSave"
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/btnLoad"
+        />
+    <Button
+        android:id="@+id/deleteDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete document"
+        android:layout_below="@id/btnUpdate"
+        />
+    <Button
+        android:id="@+id/deleteField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Field"
+        android:layout_below="@id/deleteDocument"
+        />
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:layout_below="@id/deleteField"
+        />
+</RelativeLayout>
